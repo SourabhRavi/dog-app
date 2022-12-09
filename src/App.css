@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #FFFBF5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-black {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 13px 30px;
+  font-weight: 700;
+}
+
+.navbar {
+  padding: 40px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.btn-black:hover {
+  background: #fff;
+  color: #000;
+}
+
+.heading-wrap {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000;
+  margin-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading span {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.grid-list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.css-1u95poe-JoyCardCover-root {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 190px), linear-gradient(to top, rgba(0, 0, 0, 1.6), rgba(0, 0, 0, 0) 140px) !important;
+}
+
+.card-item {
+  cursor: pointer;
+}
+
+.hero-heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  text-transform: capitalize;
+}
+
+.hero-img-wrap {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-img-wrap .one {
+  align-self: flex-end;
+}
+
+.hero-img-wrap .two {
+  align-self: flex-end;
+}
+
+.hero-img-wrap .three {
+  align-self: flex-start;
+}
+
+.menu-heading {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu-item {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 30px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu-item img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  background: #18A168;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.home-menu-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading.home {
+  margin-bottom: 40px;
 }
