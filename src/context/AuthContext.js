@@ -12,6 +12,7 @@ import {
 } from "firebase/auth";
 
 import { auth } from "../firebase-config";
+import Loading from "../Components/Loading";
 
 const AuthContext = createContext();
 
@@ -40,7 +41,7 @@ export const AuthContextProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={{ googleSignIn, logOut, user }}>
-      {!loading && children}
+      {!loading ? children : <Loading />}
     </AuthContext.Provider>
   );
 };
