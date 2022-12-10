@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/App.css">
 
     <style media="screen">
       body {
@@ -25,6 +24,312 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+      }
+    </style>
+    <style>
+      * {
+        font-size: 18px;
+        box-sizing: border-box;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+      }
+
+      body {
+        background-color: #FFFBF5;
+      }
+
+      .btn-black {
+        background: #000;
+        color: #fff;
+        border: 1px solid #000;
+      }
+
+      .btn {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 13px 30px;
+        font-weight: 700;
+      }
+
+      .navbar {
+        padding: 40px 0;
+      }
+
+      .navbar-brand {
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 700;
+      }
+
+      .btn-black:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      .heading-wrap {
+        display: flex;
+        align-items: center;
+      }
+
+      .heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #000;
+        margin-right: 30px;
+      }
+
+      .heading span {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .grid-list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+      }
+
+      .css-1u95poe-JoyCardCover-root {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 190px), linear-gradient(to top, rgba(0, 0, 0, 1.6), rgba(0, 0, 0, 0) 140px) !important;
+      }
+
+      .card-item {
+        cursor: pointer;
+      }
+
+      .hero-heading {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 63px;
+        text-transform: capitalize;
+      }
+
+      .hero-img-wrap {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hero-img-wrap .one {
+        align-self: flex-end;
+      }
+
+      .hero-img-wrap .two {
+        align-self: flex-end;
+      }
+
+      .hero-img-wrap .three {
+        align-self: flex-start;
+      }
+
+      .menu-heading {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .menu-item {
+        text-align: center;
+        background: #f0f0f0;
+        padding: 30px 40px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .menu-item img {
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        background: #18A168;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .home-menu-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .heading.home {
+        margin-bottom: 40px;
+      }
+
+      @media only screen and (max-width: 1440px) {
+
+        .hero-img-wrap .one,
+        .hero-img-wrap .three {
+          width: 280px;
+        }
+
+        .hero-img-wrap .two {
+          width: 450px;
+        }
+
+        .hero-img-wrap .one {
+          align-self: center;
+        }
+      }
+
+      @media only screen and (max-width: 1439px) {
+        .hero-img-wrap .two {
+          width: 400px;
+        }
+
+        .hero-img-wrap .one,
+        .hero-img-wrap .three {
+          width: 240px;
+        }
+      }
+
+      @media only screen and (max-width: 1199px) {
+
+        .hero-img-wrap .one,
+        .hero-img-wrap .three {
+          width: 220px;
+        }
+      }
+
+      @media only screen and (max-width: 991px) {
+
+        .hero-img-wrap .three {
+          width: 140px;
+          align-self: flex-end;
+        }
+
+        .hero-img-wrap .one {
+          width: 180px;
+          align-self: flex-end;
+        }
+
+        .hero-img-wrap .two {
+          width: 310px;
+        }
+
+        .hero-heading {
+          font-size: 45px;
+          line-height: 53px;
+        }
+
+        .menu-item img {
+          height: 210px;
+          width: 210px;
+        }
+
+        .grid-list {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+
+      @media only screen and (max-width: 767px) {
+        .hero-img-wrap .three {
+          display: none;
+        }
+
+        .menu-item img {
+          height: 150px;
+          width: 150px;
+        }
+
+        .grid-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .heading,
+        .heading span {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        .heading-wrap svg {
+          width: 110px;
+        }
+
+      }
+
+
+      @media only screen and (max-width: 575px) {
+        .home-menu-wrap {
+          flex-direction: column;
+        }
+
+        .menu-item:nth-child(1) {
+          margin-bottom: 30px;
+        }
+
+        .heading.home {
+          margin-right: 0;
+        }
+
+        .heading {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        .heading-wrap svg {
+          width: 90px;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .hero-img-wrap {
+          padding-top: 20px;
+          flex-direction: column;
+        }
+
+        .hero-img-wrap .one {
+          width: 170px;
+          align-self: flex-start;
+        }
+
+        .hero-img-wrap .two {
+          width: 270px;
+          margin-top: -60px;
+          align-self: center;
+        }
+
+        .hero-heading {
+          font-size: 40px;
+          line-height: 53px;
+        }
+
+        .heading,
+        .heading span {
+          font-size: 27px;
+          line-height: 30px;
+        }
+
+        .container {
+          max-width: 380px;
+        }
+
+        .card-item {
+          width: 100%;
+        }
+
+        .card-item h2 {
+          font-size: 14px;
+        }
+
+        .grid-list {
+          margin-top: 20px;
+          grid-gap: 15px;
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+
+        .hero-img-wrap .two {
+          width: 250px;
+          margin-top: -50px;
+        }
+
+        .container {
+          max-width: 360px;
+        }
       }
     </style>
 </head>
