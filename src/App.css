@@ -127,3 +127,178 @@ body {
 .heading.home {
   margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 1440px) {
+
+  .hero-img-wrap .one,
+  .hero-img-wrap .three {
+    width: 280px;
+  }
+
+  .hero-img-wrap .two {
+    width: 450px;
+  }
+
+  .hero-img-wrap .one {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .hero-img-wrap .two {
+    width: 400px;
+  }
+
+  .hero-img-wrap .one,
+  .hero-img-wrap .three {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .hero-img-wrap .one,
+  .hero-img-wrap .three {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .hero-img-wrap .three {
+    width: 140px;
+    align-self: flex-end;
+  }
+
+  .hero-img-wrap .one {
+    width: 180px;
+    align-self: flex-end;
+  }
+
+  .hero-img-wrap .two {
+    width: 310px;
+  }
+
+  .hero-heading {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  .menu-item img {
+    height: 210px;
+    width: 210px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .hero-img-wrap .three {
+    display: none;
+  }
+
+  .menu-item img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading,
+  .heading span {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .heading-wrap svg {
+    width: 110px;
+  }
+
+}
+
+
+@media only screen and (max-width: 575px) {
+  .home-menu-wrap {
+    flex-direction: column;
+  }
+
+  .menu-item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  .heading.home {
+    margin-right: 0;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .heading-wrap svg {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-img-wrap {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .hero-img-wrap .one {
+    width: 170px;
+    align-self: flex-start;
+  }
+
+  .hero-img-wrap .two {
+    width: 270px;
+    margin-top: -60px;
+    align-self: center;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .heading,
+  .heading span {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .container {
+    max-width: 380px;
+  }
+
+  .card-item {
+    width: 100%;
+  }
+
+  .card-item h2 {
+    font-size: 14px;
+  }
+
+  .grid-list {
+    margin-top: 20px;
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .hero-img-wrap .two {
+    width: 250px;
+    margin-top: -50px;
+  }
+
+  .container {
+    max-width: 360px;
+  }
+}

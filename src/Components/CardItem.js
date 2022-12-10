@@ -20,7 +20,7 @@ function CardItem({ breed }) {
 
   return (
     <div className="card-item">
-      <Card sx={{ minHeight: "280px", width: "100%" }}>
+      <Card sx={{ minHeight: "280px" }}>
         <CardCover>
           {imgUrl === false ? (
             <Skeleton

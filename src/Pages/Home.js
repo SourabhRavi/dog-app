@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Breed from "../Components/Breed";
 import Random from "../Components/Random";
 import breed from "../Components/img/menu-img-1.png";
@@ -6,13 +6,24 @@ import random from "../Components/img/find-dog-img.png";
 import loginBackgroundImg from "../Components/img/login-bg.png";
 
 function Home() {
+  const [menuItem, setMenuItem] = useState(false);
+
   document.body.style.backgroundColor = "#1870A1";
   document.body.style.backgroundImage = `url("${loginBackgroundImg}")`;
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundPositionY = "bottom";
   document.body.style.height = "100vh";
 
-  const [menuItem, setMenuItem] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 767 && menuItem === false) {
+      document.body.style.height = "max-content";
+      document.body.style.backgroundImage = "none";
+      document.getElementById("main-content").style.padding = "0";
+    }
+    if (window.innerWidth < 1199 && menuItem === "breed") {
+      document.getElementById("main-content").style.padding = "20px";
+    }
+  }, [menuItem]);
 
   return (
     <>
