@@ -20,7 +20,7 @@ function Login() {
     if (user !== null) {
       navigate("/home");
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <>
